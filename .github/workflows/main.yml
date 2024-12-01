@@ -21,7 +21,7 @@ jobs:
 
     - name: Build and push Docker image
       run: |
-        docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+        docker build . --file Dockerfile --tag saaksinghdocker/wisecow:$(date +%s)
         docker push saakshisinghdocker/wisecow::latest
 
   deploy-with-tls:
